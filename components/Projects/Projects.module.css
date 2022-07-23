@@ -7,10 +7,20 @@
 }
 
 .laptopDiv {
-    background-image: url(../../public/macbook.png);
-    background-size: 1280px 813px;
+    /* background-image: url(../../public/macbook.png);
+    background-size: 1280px 813px; */
+    position: relative;
     width: 1280px;
     height: 813px;
+}
+
+.laptop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1280px;
+    height: 813px;
+    z-index: 5;
 }
 
 .laptopDivMargin {
@@ -36,15 +46,6 @@
     z-index: 10;
 }
 
-.phoneMockupDiv > span > img {
-    position: absolute;
-    top: 70px;
-    right: -40px;
-    height: 350px;
-    z-index: 10;
-}
-
-
 .imgScreenshotPhone {
     width: 267px;
     height: 582px;
@@ -54,22 +55,110 @@
     z-index: 5;
 }
 
+
+/* Animation */
 @keyframes fadeO {
     0% {
+        transform: translateX(0);
         opacity: 1;
     }
-    40% {
+    27% {
+        transform: translateX(0);
         opacity: 1;
     }
-    60% {
+    33% {
+        transform: translateX(-17px);
+        opacity: 0;
+    }
+    93% {
+        transform: translateX(0);
         opacity: 0;
     }
     100% {
-        opacity: 0;
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.img1 {
+    animation: fadeO 7.5s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+.img2 {
+    animation: fadeO 7.5s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2.5s;
+}
+
+.img3 {
+    animation: fadeO 7.5s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+
+/* .img4 {
+    animation: fadeO 8s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+} */
+
+/* http://css3.bradshawenterprises.com/cfimg/
+For "n" images You must define:
+a=presentation time for one image : 2
+b=duration for cross fading : 0.5
+Total animation-duration is of course t=(a+b)*n
+animation-delay = t/n or = a+b
+Percentage for keyframes:
+0%
+a/t*100%
+(a+b)/t*100% = 1/n*100%
+100%-(b/t*100%)
+100% */
+
+
+.sliderProjectNameDiv {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@keyframes underline0 {
+    0% {
+        width: 100%;
+    }
+    27% {
+        width: 100%;
+    }
+    33% {
+        width: 0;
+    }
+    93% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
     }
 }
 
-.img2 {
-    animation: fadeO 5s ease-in-out;
+.habitTitle::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: red;
+    margin-top: 5px;
+    animation: underline0 7.5s ease-in-out;
     animation-iteration-count: infinite;
+}
+
+.TicketTitle::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: red;
+    margin-top: 5px;
+    animation: underline0 7.5s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2.5s;
 }
