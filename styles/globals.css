@@ -1,9 +1,12 @@
+:root {
+  --main-color: pink;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
 }
 
 a {
@@ -13,4 +16,29 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1,h2,h3,p {
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: var(--main-color);
+  padding: 0.5em 1.25em;
+  border-radius: 5px;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.9;
 }

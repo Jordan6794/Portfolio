@@ -3,12 +3,14 @@ import styles from '../styles/Home.module.css'
 
 import Hero from './Hero/Hero'
 import Nav from './Nav/Nav'
+import Projects from './Projects/Projects'
 
 const Index: FunctionComponent = () => {
 	return (
 		<>
             <Nav />
 			<Hero />
+            <Projects />
 		</>
 	)
 }

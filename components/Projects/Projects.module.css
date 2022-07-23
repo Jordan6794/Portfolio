@@ -1,0 +1,75 @@
+
+.inActionDiv {
+    margin-bottom: 9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.laptopDiv {
+    background-image: url(../../public/macbook.png);
+    background-size: 1280px 813px;
+    width: 1280px;
+    height: 813px;
+}
+
+.laptopDivMargin {
+    position: relative;
+    margin-left: 166px;
+    margin-top: 111px;
+}
+
+.imgScreenshot {
+    width: 948px;
+    height: 590px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.phoneMockup {
+    position: absolute;
+    top: 70px;
+    right: -40px;
+    height: 650px;
+    width: 427px;
+    z-index: 10;
+}
+
+.phoneMockupDiv > span > img {
+    position: absolute;
+    top: 70px;
+    right: -40px;
+    height: 350px;
+    z-index: 10;
+}
+
+
+.imgScreenshotPhone {
+    width: 267px;
+    height: 582px;
+    position: absolute;
+    top: 105px;
+    left: 807px;
+    z-index: 5;
+}
+
+@keyframes fadeO {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.img2 {
+    animation: fadeO 5s ease-in-out;
+    animation-iteration-count: infinite;
+}

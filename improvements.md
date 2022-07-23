@@ -1,0 +1,1 @@
+Use Image for the images : https://nextjs.org/docs/api-reference/next/image
