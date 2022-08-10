@@ -28,6 +28,10 @@ h1,h2,h3,p {
   margin: 0 auto;
 }
 
+.background-color {
+  background-color: var(--main-color);
+}
+
 .btn {
   display: inline-block;
   border: none;
@@ -35,11 +39,15 @@ h1,h2,h3,p {
   font-family: inherit;
   cursor: pointer;
   background-color: var(--main-color);
-  padding: 0.5em 1.25em;
-  border-radius: 5px;
+  color: white;
+  padding: 0.55em 1.25em;
+  border-radius: 23px;
 }
-
 .btn:hover,
 .btn:focus {
   opacity: 0.9;
+}
+
+.btn-big {
+  font-size: 1.2rem;
 }

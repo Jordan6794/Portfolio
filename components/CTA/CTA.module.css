@@ -1,0 +1,22 @@
+
+.section {
+    padding-bottom: 12rem;
+    padding-top: 6rem;
+}
+
+.ctaDiv {
+    padding: 3em 5em;
+    border-radius: 15px;
+    background-color: #222122;
+    background-color: #141C3A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4em;
+}
+
+.title {
+    font-size: 1.9rem;
+    margin-bottom: 0.3em;
+}

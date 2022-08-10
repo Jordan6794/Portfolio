@@ -7,9 +7,11 @@ import styles from "./Projects.module.css"
 const Projects: FunctionComponent = () => {
 
     return(
-        <div className="container">
-            <PreviewArea />
-        </div>
+        <section className={styles.section}>
+            <div className="container">
+                <PreviewArea />
+            </div>
+        </section>
     )
 }
 

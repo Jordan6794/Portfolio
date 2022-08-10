@@ -1,6 +1,10 @@
 
+.section {
+    margin-bottom: -6rem;
+}
+
 .inActionDiv {
-    margin-bottom: 9em;
+    margin-bottom: 11em;
     display: flex;
     flex-direction: column;
     align-items: center;

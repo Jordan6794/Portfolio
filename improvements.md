@@ -1,1 +1,7 @@
-Use Image for the images : https://nextjs.org/docs/api-reference/next/image
+- Finish all components boilerplate (projects, about, contact, footer)
+- Finish all components starting design
+- Redesign a bit skills ?
+
+- Make responsive for mobile/ipad
+- Make resume
+- Change scrollbar ?
