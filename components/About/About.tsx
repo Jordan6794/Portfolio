@@ -3,7 +3,9 @@ import { FunctionComponent } from "react";
 const About: FunctionComponent = () => {
 
     return(
-        <h3>About</h3>
+        <div className="container">
+            <h3>About</h3>
+        </div>
     )
 }
 

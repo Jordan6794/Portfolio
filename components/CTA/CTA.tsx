@@ -3,7 +3,9 @@ import { FunctionComponent } from "react";
 const CTA: FunctionComponent = () => {
 
     return(
-        <h3>CTA</h3>
+        <div className="container">
+            <h3>CTA</h3>
+        </div>
     )
 }
 

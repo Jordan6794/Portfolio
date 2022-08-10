@@ -1,5 +1,5 @@
 :root {
-  --main-color: pink;
+  --main-color: #20c98b;
 }
 
 html,
@@ -24,6 +24,7 @@ h1,h2,h3,p {
 
 .container {
   width: 80%;
+  max-width: 1500px;
   margin: 0 auto;
 }
 

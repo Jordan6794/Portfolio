@@ -1,9 +1,12 @@
 import { FunctionComponent } from 'react'
 import styles from '../styles/Home.module.css'
+import About from './About/About'
+import CTA from './CTA/CTA'
 
 import Hero from './Hero/Hero'
 import Nav from './Nav/Nav'
 import Projects from './Projects/Projects'
+import Skills from './Skills/Skills'
 
 const Index: FunctionComponent = () => {
 	return (
@@ -11,6 +14,9 @@ const Index: FunctionComponent = () => {
             <Nav />
 			<Hero />
             <Projects />
+			<Skills />
+			<CTA />
+			<About />
 		</>
 	)
 }
