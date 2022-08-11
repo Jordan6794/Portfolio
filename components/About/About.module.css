@@ -1,0 +1,42 @@
+
+.section {
+    margin-bottom: 9em;
+}
+
+.aboutContainer {
+    display: grid;
+    grid-template-columns: 3fr minmax(400px, 2fr) ;
+}
+
+.pictureArea {
+    margin: 0 auto;
+    position: relative;
+    height: 500px;
+    width: 375px;
+}
+.pictureDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* original ratio 3:4 */
+    height: 500px;
+    width: 375px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.textArea {
+    display: flex;
+    align-items: center;
+}
+
+.textTitle {
+    font-size: 2.2rem;
+    margin-bottom: 1em;
+}
+
+.aboutText {
+    font-size: 1.75rem;
+    margin-bottom: 1em;
+    line-height: 1.4;
+}

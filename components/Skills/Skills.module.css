@@ -3,7 +3,7 @@
     margin-top: -12rem;
 }
 
-.sectionTitle {
+.section-title {
     font-size: 2.5rem;
     color: white;
     text-align: center;
@@ -23,6 +23,8 @@
     padding: 2em 1em;
     width: 33.33%;
     text-align: center;
+    border-right: 2px solid #E6ECF8;
+    border-right: 1px solid lightgray;
     border-right: 1px solid #E6ECF8;
 }
 .skillTypeDiv:last-child {
@@ -33,6 +35,8 @@
     font-weight: 600;
     margin-bottom: 1.5em;
     padding-bottom: 0.5em;
+    border-bottom: 2px solid #E6ECF8;
+    border-bottom: 1px solid lightgray;
     border-bottom: 1px solid #E6ECF8;
 }
 

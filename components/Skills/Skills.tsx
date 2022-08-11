@@ -13,9 +13,11 @@ import styles from "./Skills.module.css"
 const Skills: FunctionComponent = () => {
 
     return(
-        <section className={styles.section}>
+        <section id="skills" className={styles.section}>
             <div className="container">
-                <h3 className={styles.sectionTitle}>My Skills</h3>
+                <div className="container-text-align">
+                    <h3 className="section-title white-color">My Skills</h3>
+                </div>
                     <div className={styles.skillsDiv}>
                         <SkillsType title="Front End" icon={<CodeSVG className={styles.skillTypeIcon}/>}>
                             <FrontEndContent />

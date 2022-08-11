@@ -1,5 +1,6 @@
 :root {
-  --main-color: #20c98b;
+  --main-color: #20c98b ;
+  --secondary-color:#6e07f3;
 }
 
 html,
@@ -27,9 +28,36 @@ h1,h2,h3,p {
   max-width: 1500px;
   margin: 0 auto;
 }
+.container-text-align {
+  text-align: center;
+}
 
 .background-color {
+  background-color: var(--secondary-color);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+.section-title::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 35%;
+  margin: 0 auto;
+  margin-top: 0.1em;
   background-color: var(--main-color);
+}
+
+.white-color {
+  color: white;
+}
+
+.enphasis {
+  color: var(--main-color)
 }
 
 .btn {

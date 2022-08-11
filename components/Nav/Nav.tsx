@@ -11,7 +11,7 @@ const Nav: FunctionComponent = () => {
                 <h3>Logo</h3>
                 <div className={styles.navElements}>
                     <Link href='/#'>Projects</Link>
-                    <Link href='/#'>Skills</Link>
+                    <Link href='/#skills'>Skills</Link>
                     <Link href='/#'>About</Link>
                     <Link href='/#'>Contact Me</Link>
                 </div>
