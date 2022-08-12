@@ -16,11 +16,11 @@ const About: FunctionComponent = () => {
                 <div className={styles.aboutContainer}>
                     <div className={styles.textArea}>
                         <div>
-                            <h3 className={styles.textTitle}>I am <span className="enphasis">Jordan Acker</span>, a Fullstack developer</h3>
+                            <h3 className={styles.textTitle}>I am <span className="enphasis">Jordan Acker</span>, a fullstack developer</h3>
                             <p className={styles.aboutText}>I am a <span className="enphasis">full stack</span> web developer with a strong proficiency using <span className="enphasis">React.</span><br />
                                 I build elegant and performant web solutions from full stack applications to world-class business websites. <br />
                                 As far as the back-end, I am familliar with the <span className="enphasis">MERN</span> stack as well as <span className="enphasis">firebase</span><br />
-                                However, I also love creating simple yet artistic <span className="enphasis">UI designs.</span>
+                                I also love creating simple yet artistic <span className="enphasis">UI designs.</span>
                             </p>
                             <button className="btn btn-big">My Resume</button>
                         </div>

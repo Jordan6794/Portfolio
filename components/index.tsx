@@ -1,8 +1,8 @@
 import { FunctionComponent } from 'react'
-import styles from '../styles/Home.module.css'
-import About from './About/About'
-import CTA from './CTA/CTA'
 
+import About from './About/About'
+import Contact from './Contact/Contact'
+import CTA from './CTA/CTA'
 import Hero from './Hero/Hero'
 import Nav from './Nav/Nav'
 import Projects from './Projects/Projects'
@@ -17,6 +17,7 @@ const Index: FunctionComponent = () => {
 			<CTA />
 			<Skills />
 			<About />
+			<Contact />
 		</>
 	)
 }

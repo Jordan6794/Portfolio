@@ -23,6 +23,10 @@ h1,h2,h3,p {
   margin: 0;
 }
 
+button:disabled {
+  cursor: initial;
+}
+
 .container {
   width: 80%;
   max-width: 1500px;
@@ -78,4 +82,8 @@ h1,h2,h3,p {
 
 .btn-big {
   font-size: 1.2rem;
+}
+
+.btn-form {
+  font-size: 1rem;
 }
