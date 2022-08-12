@@ -57,7 +57,7 @@ const CTA: FunctionComponent = () => {
     }
 
     return(
-            <section className={styles.section}>
+            <section id="contact" className={styles.section}>
                 <div className="container">
                     <div className="container-text-align">
                         <h3 className="section-title">Contact me</h3>

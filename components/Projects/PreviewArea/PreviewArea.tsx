@@ -13,7 +13,6 @@ import styles from '../Projects.module.css'
 const PreviewArea: FunctionComponent = () => {
 	return (
 		<div className={styles.inActionDiv}>
-			<h1>My past works :</h1>
 			<div className={styles.laptopDiv}>
 				<div className={styles.laptop}>
 					<Image src={macbook} alt="habits in action" layout="fill" />

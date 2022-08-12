@@ -7,8 +7,11 @@ import styles from "./Projects.module.css"
 const Projects: FunctionComponent = () => {
 
     return(
-        <section className={styles.section}>
+        <section id="projects" className={styles.section}>
             <div className="container">
+                <div className="container-text-align">
+                    <h2 className="section-title">My past work</h2>
+                </div>
                 <PreviewArea />
             </div>
         </section>
