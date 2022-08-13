@@ -10,7 +10,7 @@ const Projects: FunctionComponent = () => {
         <section id="projects" className={styles.section}>
             <div className="container">
                 <div className="container-text-align">
-                    <h2 className="section-title">My past work</h2>
+                    <h2 className="section-title">Past works</h2>
                 </div>
                 <PreviewArea />
             </div>

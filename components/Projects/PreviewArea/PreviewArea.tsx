@@ -2,11 +2,22 @@ import { FunctionComponent } from 'react'
 import Image from 'next/image'
 
 import macbook from '../../../public/macbook.png'
-import dashboardPic from '../../../public/dashboard.png'
-import localhostPic from '../../../public/localhost.png'
 import phoneMockup from '../../../public/phone.png'
-import localhostPhone from '../../../public/localhost_3000_signup_phone.png'
-import habitsChrome from '../../../public/habitsChrome.png'
+import phoneStatusBarMockup from '../../../public/phone-status-bar.jpg'
+
+import ScreenHabitsLanding from '../../../public/screen_habits_landing.png'
+import ScreenHabitsLogin from '../../../public/screen_habits_login.png'
+import ScreenHabitsDashboard from '../../../public/screen_habits_dashboard.png'
+import ScreenTTDashboard from '../../../public/screen_TT_dashboard.png'
+import ScreenTTFeed from '../../../public/screen_TT_feed.png'
+import ScreenTTTicket from '../../../public/screen_TT_ticket.png'
+
+import ScreenHabitsLandingPhone from '../../../public/screen_habits_landing_phone.png'
+import ScreenHabitsLoginPhone from '../../../public/screen_habits_login_phone.png'
+import ScreenHabitsDashboardPhone from '../../../public/screen_habits_dashboard_phone.png'
+import ScreenTTDashboardPhone from '../../../public/screen_TT_dashboard_phone.png'
+import ScreenTTFeedPhone from '../../../public/screen_TT_feed_phone.png'
+import ScreenTTTicketPhone from '../../../public/screen_TT_ticket_phone.png'
 
 import styles from '../Projects.module.css'
 
@@ -18,32 +29,56 @@ const PreviewArea: FunctionComponent = () => {
 					<Image src={macbook} alt="habits in action" layout="fill" />
 				</div>
 				<div className={styles.laptopDivMargin}>
+					{/* Laptop images */}
 					<div className={`${styles.imgScreenshot} ${styles.img1}`}>
-						<Image src={dashboardPic} alt="habits in action" layout="fill" />
+						<Image src={ScreenTTTicket} alt="habits in action" layout="fill" />
 					</div>
 					<div className={`${styles.imgScreenshot} ${styles.img2}`}>
-						<Image src={localhostPic} alt="habits in action" layout="fill" />
+						<Image src={ScreenTTFeed} alt="habits in action" layout="fill" />
 					</div>
 					<div className={`${styles.imgScreenshot} ${styles.img3}`}>
-						<Image src={habitsChrome} alt="habits in action" layout="fill" />
+						<Image src={ScreenTTDashboard} alt="habits in action" layout="fill" />
 					</div>
+					<div className={`${styles.imgScreenshot} ${styles.img4}`}>
+						<Image src={ScreenHabitsDashboard} alt="habits in action" layout="fill" />
+					</div>
+					<div className={`${styles.imgScreenshot} ${styles.img5}`}>
+						<Image src={ScreenHabitsLogin} alt="habits in action" layout="fill" />
+					</div>
+					<div className={`${styles.imgScreenshot} ${styles.img6}`}>
+						<Image src={ScreenHabitsLanding} alt="habits in action" layout="fill" />
+					</div>
+
+					{/* Phone Images */}
 					<div className={`${styles.phoneMockup}`}>
 						<Image src={phoneMockup} alt="phone mockup" layout="fill" />
 					</div>
+					<div className={`${styles.phoneStatusBarMockup}`}>
+						<Image src={phoneStatusBarMockup} alt="phone mockup" layout="fill" />
+					</div>
 					<div className={`${styles.imgScreenshotPhone} ${styles.img1}`}>
-						<Image src={dashboardPic} alt="habits in action" layout="fill" />
+						<Image src={ScreenTTTicketPhone} alt="habits in action" layout="fill" />
 					</div>
 					<div className={`${styles.imgScreenshotPhone} ${styles.img2}`}>
-						<Image src={localhostPhone} alt="habits in action" layout="fill" />
+						<Image src={ScreenTTFeedPhone} alt="habits in action" layout="fill" />
 					</div>
 					<div className={`${styles.imgScreenshotPhone} ${styles.img3}`}>
-						<Image src={habitsChrome} alt="habits in action" layout="fill" />
+						<Image src={ScreenTTDashboardPhone} alt="habits in action" layout="fill" />
+					</div>
+					<div className={`${styles.imgScreenshotPhone} ${styles.img4}`}>
+						<Image src={ScreenHabitsDashboardPhone} alt="habits in action" layout="fill" />
+					</div>
+					<div className={`${styles.imgScreenshotPhone} ${styles.img5}`}>
+						<Image src={ScreenHabitsLoginPhone} alt="habits in action" layout="fill" />
+					</div>
+					<div className={`${styles.imgScreenshotPhone} ${styles.img6}`}>
+						<Image src={ScreenHabitsLandingPhone} alt="habits in action" layout="fill" />
 					</div>
 				</div>
 			</div>
 
 			<div className={styles.sliderProjectNameDiv}>
-				<p className={styles.habitTitle}>Habits 30</p>
+				<p className={styles.habitTitle}>Habits30</p>
 				<p className={styles.TicketTitle}>Team Ticket</p>
 			</div>
 		</div>

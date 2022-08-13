@@ -15,6 +15,7 @@
 
 .heroDiv {
     height: calc(100vh - var(--nav-height));
+    margin-bottom: 5em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -63,12 +64,18 @@
 }
 
 .socialIcon {
-    /* fill: var(--main-color); */
-    height: 32px;
-    width: 32px;
-    margin-right: 15px;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    transition: fill 0.2s ease-in-out;
+}
+.socialIcon:hover {
+    fill: var(--main-color);
 }
 
-.socialIcon:last-child {
+.socialLink {
+    margin-right: 15px;
+}
+.socialLink:last-child {
     margin-right: 0;
 }
