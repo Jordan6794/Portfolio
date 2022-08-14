@@ -29,7 +29,7 @@ ul {
   margin: 0;
 }
 
-h1,h2,h3,p {
+h1,h2,h3,h4,h5,p {
   margin: 0;
 }
 
@@ -71,6 +71,10 @@ button:disabled {
   margin: 0 auto;
   margin-top: 0.1em;
   background-color: var(--main-color);
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
 }
 
 .white-color {
@@ -115,4 +119,35 @@ button:disabled {
 .btn-nav-contact:hover {
   background-color: var(--main-color);
   color: white;
+}
+
+.btn-tech-item {
+  cursor: initial;
+  font-size: 0.8rem;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+.btn-tech-item:hover,
+.btn-tech-item:focus {
+  opacity: initial
+}
+
+.btn-project-cta {
+  border-radius: 4px;
+  margin-right: 1em;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+.btn-project-cta:last-child {
+  margin-right: 0;
+}
+
+.icon-project-btn {
+  fill: var(--main-color);
+  transition: fill 0.2s ease-in-out;
+}
+.btn-project-cta:hover > .icon-project-btn {
+  fill: white;
 }

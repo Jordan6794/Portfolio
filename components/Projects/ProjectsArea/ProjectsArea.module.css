@@ -1,0 +1,98 @@
+
+.projectDiv {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 7em;
+}
+.projectDiv:last-child {
+    margin-bottom: 0;
+}
+.reverseProjectDiv {
+    grid-template-columns: 50% 50%;
+}
+
+.infosArea {
+    padding-right: 1.5em;
+}
+.reverseInfosArea {
+    text-align: end;
+    padding-right: 0;
+    padding-left: 1.5em;
+}
+
+.title {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.subtitle {
+    color: #6c757d;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: initial;
+    margin-bottom: 1em;
+}
+
+
+.text {
+    margin-bottom: 0.7em;
+}
+
+.technologiesTitle {
+    font-weight: initial;
+    font-size: 1.1rem;
+    margin-bottom: 0.8em;
+}
+
+.technologiesDiv {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+.reverseTechnologiesDiv {
+    justify-content: flex-end;
+}
+
+.techItem {
+    margin-right: 0.5em;
+}
+
+.buttonsDiv {
+    display: flex;
+}
+.reverseButtonsDiv {
+    justify-content: flex-end;
+}
+
+.iconWhite {
+    fill: white;
+}
+.iconMargin {
+    margin-right: 0.4em;
+}
+
+.centerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pictureDivContainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56%;
+    box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 6px, rgba(0, 0, 0, 0.03) -2px -2px 4px;
+    border-radius: 17px;
+    overflow: hidden;
+}
+.pictureDiv {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56%;
+}

@@ -19,7 +19,7 @@ import ScreenTTDashboardPhone from '../../../public/screen_TT_dashboard_phone.pn
 import ScreenTTFeedPhone from '../../../public/screen_TT_feed_phone.png'
 import ScreenTTTicketPhone from '../../../public/screen_TT_ticket_phone.png'
 
-import styles from '../Projects.module.css'
+import styles from './PreviewArea.module.css'
 
 const PreviewArea: FunctionComponent = () => {
 	return (
