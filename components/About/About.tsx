@@ -1,7 +1,8 @@
 import { FunctionComponent } from "react";
 import Image from 'next/image'
 
-import MeImage from "../../public/me.jpg"
+// import MeImage from "../../public/me.jpg"
+import MeImage from "../../public/me_crop.jpg"
 
 import styles from "./About.module.css"
 

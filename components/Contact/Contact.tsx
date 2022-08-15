@@ -43,7 +43,7 @@ const CTA: FunctionComponent = () => {
         }
         try {
             await emailjs.sendForm(process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID, process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID, formRef.current, process.env.NEXT_PUBLIC_EMAIL_APIKEY)
-            setSuccessMessage("Thank you. Your message has been sent successfully.")
+            setSuccessMessage("Thank you. Your message has been sent successfully!")
             setFormInputs({
                 name: '',
                 email: '',

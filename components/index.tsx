@@ -3,6 +3,7 @@ import { FunctionComponent } from 'react'
 import About from './About/About'
 import Contact from './Contact/Contact'
 import CTA from './CTA/CTA'
+import Footer from './Footer/Footer'
 import Hero from './Hero/Hero'
 import Nav from './Nav/Nav'
 import Projects from './Projects/Projects'
@@ -18,6 +19,7 @@ const Index: FunctionComponent = () => {
 			<Skills />
 			<About />
 			<Contact />
+			<Footer />
 		</>
 	)
 }

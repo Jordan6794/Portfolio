@@ -1,6 +1,16 @@
 :root {
   --main-color: #20c98b ;
-  --secondary-color:#6e07f3;
+
+  /* 1 */
+  --main-color: #007ccc ;
+  /* 2 */
+  --main-color: #00ccbb; 
+  /* 3 */
+  --main-color: #00a6cc;
+
+  --secondary-color:#e8c8b3;
+  --secondary-color:#72AACC;
+  --contrast-color: #C2633C;
   --nav-height: 55px;
 }
 
@@ -78,7 +88,7 @@ button:disabled {
 }
 
 .white-color {
-  color: white;
+  /* color: white; */
 }
 
 .emphasis {
@@ -105,6 +115,10 @@ button:disabled {
   font-size: 1.2rem;
 }
 
+.btn-contrast {
+  background-color: var(--contrast-color);
+}
+
 .btn-form {
   font-size: 1rem;
 }
@@ -121,15 +135,10 @@ button:disabled {
   color: white;
 }
 
-.btn-tech-item {
-  cursor: initial;
-  font-size: 0.8rem;
-  margin-right: 1em;
-  margin-bottom: 1em;
-}
-.btn-tech-item:hover,
-.btn-tech-item:focus {
-  opacity: initial
+.btn-ghost {
+  background-color: transparent;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
 }
 
 .btn-project-cta {
@@ -148,6 +157,33 @@ button:disabled {
   fill: var(--main-color);
   transition: fill 0.2s ease-in-out;
 }
-.btn-project-cta:hover > .icon-project-btn {
-  fill: white;
+
+.btn-project-hover {
+  display: flex;
+  align-items: center;
+  /* border-radius: 4px; */
+  font-size: 1.15rem;
+  background-color: black;
+  height: fit-content;
+  margin-top: 50%;
+  z-index: 5;
+  transition: opacity 0.3s ease-in-out
+}
+.btn-project-hover:hover {
+  background-color: #141414;
+}
+
+.btn-tech-item {
+  cursor: initial;
+  font-size: 0.8rem;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+.btn-tech-item:hover,
+.btn-tech-item:focus {
+  opacity: initial
+}
+
+.btn-tech-item:last-child {
+  margin-right: 0;
 }

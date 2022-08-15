@@ -1,0 +1,25 @@
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+    border-color: rgba(0, 0, 0, 0.1);
+    padding: 2em 0;
+}
+
+.socialIcon {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    transition: fill 0.2s ease-in-out;
+}
+.socialIcon:hover {
+    fill: var(--main-color);
+}
+
+.socialLink {
+    margin-right: 15px;
+}
+.socialLink:last-child {
+    margin-right: 0;
+}

@@ -13,7 +13,7 @@ const Hero: FunctionComponent = () => {
 				<div></div>
 				<h1 className={styles.title}>
 					Jordan Acker <br />
-					<span className="emphasis">Full stack</span> developer
+					<span className="emphasis">Full Stack</span> developer
 					<br />
 					Specialized in <span className="emphasis">React</span>
 				</h1>

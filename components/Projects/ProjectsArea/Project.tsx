@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import CodeSVG from '../../../public/code_small.svg'
 import EyeSVG from '../../../public/eye_small.svg'
+import VisitSVG from '../../../public/visit.svg'
 
 import styles from './ProjectsArea.module.css'
 
@@ -29,7 +30,7 @@ const Project: FunctionComponent<{
 				))}
 			</div>
 			<div className={`${styles.buttonsDiv} ${isReverseSide ? styles.reverseButtonsDiv : ''}`}>
-				<a className="btn btn-project-cta btn-nav-contact">
+				<a className="btn btn-project-cta btn-ghost">
 					<CodeSVG className={`icon-project-btn ${styles.iconMargin}`} /> Code
 				</a>
 				<a className="btn btn-project-cta">
@@ -44,6 +45,10 @@ const Project: FunctionComponent<{
 			{!isReverseSide && infosAreaDisplay}
             <div className={styles.centerContainer}>
                 <div className={styles.pictureDivContainer}>
+					<a className={`btn btn-project-hover ${styles.btnProjectHover}`}>
+						<VisitSVG className={`${styles.iconWhite} ${styles.visitIcon} ${styles.iconMargin}`} />
+						Visit website
+					</a>
                     <div className={styles.pictureDiv}>
                         <Image src={image} alt="project image" layout="fill" />
                     </div>
