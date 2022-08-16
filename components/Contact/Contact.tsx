@@ -1,7 +1,7 @@
 import { FunctionComponent, useRef, useState } from "react"
 import emailjs from '@emailjs/browser'
 
-import EnvelopeSVG from "../../public/undraw_envelope.svg"
+import EnvelopeSVG from "../../public/envelope.svg"
 
 import styles from "./Contact.module.css"
 

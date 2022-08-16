@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { FunctionComponent } from "react";
 
+import LogoSVG from "../../public/logo.svg"
+
 import styles from "./Nav.module.css"
 
 const Nav: FunctionComponent = () => {
@@ -8,7 +10,8 @@ const Nav: FunctionComponent = () => {
     return(
         <div className="wide-container">
             <div className={styles.navDiv}>
-                <h3>Logo</h3>
+                {/* <h3>Logo</h3> */}
+                <LogoSVG className={styles.logo} />
                 <ul className={styles.navElements}>
                     <Link href='/#projects'><li className={styles.navItem}>Projects</li></Link>
                     <Link href='/#skills'><li className={styles.navItem}>Skills</li></Link>

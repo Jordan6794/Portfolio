@@ -6,7 +6,8 @@ import BackEndContent from "./BackEndContent";
 import OtherContent from "./OtherContent";
 
 import CodeSVG from "../../public/code.svg"
-import DatabaseSVG from "../../public/database.svg"
+import ToolsSVG from "../../public/tools3.svg"
+import MonitorSVG from "../../public/monitor2.svg"
 
 import styles from "./Skills.module.css"
 
@@ -19,13 +20,13 @@ const Skills: FunctionComponent = () => {
                     <h3 className="section-title">My Skills</h3>
                 </div>
                     <div className={styles.skillsDiv}>
-                        <SkillsType title="Front End" icon={<CodeSVG className={styles.skillTypeIcon}/>}>
+                        <SkillsType title="Front End" icon={<MonitorSVG className={styles.skillTypeIcon}/>}>
                             <FrontEndContent />
                         </SkillsType>
-                        <SkillsType title="Back End" icon={<DatabaseSVG className={styles.skillTypeIcon}/>}>
+                        <SkillsType title="Back End" icon={<CodeSVG className={styles.skillTypeIcon}/>}>
                             <BackEndContent />
                         </SkillsType>
-                        <SkillsType title="Other" icon={<CodeSVG className={styles.skillTypeIcon}/>}>
+                        <SkillsType title="Other" icon={<ToolsSVG className={styles.skillTypeIcon}/>}>
                             <OtherContent />
                         </SkillsType>
                     </div>

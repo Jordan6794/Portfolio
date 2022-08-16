@@ -20,7 +20,7 @@
 
 
 .skillTypeDiv {
-    padding: 2em 1em;
+    padding: 1.5em 1em 2em;
     width: 33.33%;
     text-align: center;
     border-right: 2px solid #E6ECF8;
@@ -34,7 +34,7 @@
 .skillTypeTitle {
     font-weight: 600;
     margin-bottom: 1.5em;
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
     border-bottom: 2px solid #E6ECF8;
     border-bottom: 1px solid lightgray;
     border-bottom: 1px solid #E6ECF8;
@@ -48,7 +48,7 @@
     padding-left: 35%;
     display: flex;
     align-items: center;
-    margin-bottom: 6px;
+    margin-bottom: 12px;
 }
 .skillItemDiv:last-child {
     margin-bottom: 0;

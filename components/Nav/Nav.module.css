@@ -6,6 +6,11 @@
     height: var(--nav-height);
 }
 
+.logo {
+    width: 36px;
+    fill: black;
+}
+
 .navElements {
     display: flex;
     align-items: center;

@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 import CodeSVG from '../../../public/code_small.svg'
 import EyeSVG from '../../../public/eye_small.svg'
@@ -13,8 +13,10 @@ const Project: FunctionComponent<{
 	text: JSX.Element
 	technologies: string[]
 	isReverseSide: boolean
-    image: any
-}> = ({ title, subtitle, text, technologies, isReverseSide, image }) => {
+    image: StaticImageData
+	codeUrl: string
+	websiteUrl: string
+}> = ({ title, subtitle, text, technologies, isReverseSide, image, codeUrl, websiteUrl }) => {
     
 	const infosAreaDisplay = (
 		<div className={`${styles.infosArea} ${isReverseSide ? styles.reverseInfosArea : ''}`}>
@@ -30,12 +32,15 @@ const Project: FunctionComponent<{
 				))}
 			</div>
 			<div className={`${styles.buttonsDiv} ${isReverseSide ? styles.reverseButtonsDiv : ''}`}>
-				<a className="btn btn-project-cta btn-ghost">
+				{!isReverseSide && <a href={codeUrl} target="_blank" rel="noreferrer" className="btn btn-project-cta btn-ghost">
 					<CodeSVG className={`icon-project-btn ${styles.iconMargin}`} /> Code
-				</a>
-				<a className="btn btn-project-cta">
+				</a>}
+				<a className="btn btn-project-cta" href={websiteUrl} target="_blank" rel="noreferrer">
 					<EyeSVG className={`${styles.iconWhite} ${styles.iconMargin}`} /> View live
 				</a>
+				{isReverseSide && <a href={codeUrl} target="_blank" rel="noreferrer" className="btn btn-project-cta btn-ghost">
+					<CodeSVG className={`icon-project-btn ${styles.iconMargin}`} /> Code
+				</a>}
 			</div>
 		</div>
 	)
@@ -45,7 +50,7 @@ const Project: FunctionComponent<{
 			{!isReverseSide && infosAreaDisplay}
             <div className={styles.centerContainer}>
                 <div className={styles.pictureDivContainer}>
-					<a className={`btn btn-project-hover ${styles.btnProjectHover}`}>
+					<a href={websiteUrl} target="_blank" rel="noreferrer" className={`btn btn-project-hover ${styles.btnProjectHover}`}>
 						<VisitSVG className={`${styles.iconWhite} ${styles.visitIcon} ${styles.iconMargin}`} />
 						Visit website
 					</a>

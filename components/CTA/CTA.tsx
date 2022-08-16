@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FunctionComponent } from "react";
 
 import styles from "./CTA.module.css"
@@ -14,7 +15,7 @@ const CTA: FunctionComponent = () => {
                     </div>
 
                     <div className={styles.buttonArea}>
-                        <button className="btn btn-big btn-contrast">Contact me</button>
+                        <Link href="/#contact"><button className="btn btn-big btn-contrast">Contact me</button></Link>
                     </div>
                 </div>
             </div>

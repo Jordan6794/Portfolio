@@ -1,12 +1,12 @@
 :root {
   --main-color: #20c98b ;
 
-  /* 1 */
-  --main-color: #007ccc ;
   /* 2 */
   --main-color: #00ccbb; 
   /* 3 */
   --main-color: #00a6cc;
+  /* 1 */
+  --main-color: #007ccc ;
 
   --secondary-color:#e8c8b3;
   --secondary-color:#72AACC;
@@ -50,7 +50,7 @@ button:disabled {
 .wide-container {
   width: 100%;
   padding: 0 2em;
-  padding: 0 1.6em;
+  padding: 0 1.9em;
   margin: 0 auto;
 }
 
