@@ -8,8 +8,11 @@
   /* 1 */
   --main-color: #007ccc ;
 
-  --secondary-color:#e8c8b3;
   --secondary-color:#72AACC;
+  --secondary-color: #80bee6;
+  --secondary-color: #8ab7d4;
+  --secondary-color: #a1c2d8;
+
   --contrast-color: #C2633C;
   --nav-height: 55px;
 }
@@ -116,7 +119,8 @@ button:disabled {
 }
 
 .btn-contrast {
-  background-color: var(--contrast-color);
+  /* background-color: var(--contrast-color);
+  background-color: black; */
 }
 
 .btn-form {

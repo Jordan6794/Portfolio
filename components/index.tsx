@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react'
 
 import About from './About/About'
+import BackgroundColor from './BackgroundColor/BackgroundColor'
 import Contact from './Contact/Contact'
 import CTA from './CTA/CTA'
 import Footer from './Footer/Footer'
@@ -14,6 +15,7 @@ const Index: FunctionComponent = () => {
 		<>
             <Nav />
 			<Hero />
+			{/* <BackgroundColor /> */}
             <Projects />
 			<CTA />
 			<Skills />

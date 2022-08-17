@@ -1,7 +1,8 @@
 import Link from "next/link";
+import Image from 'next/image'
 import { FunctionComponent } from "react";
 
-import LogoSVG from "../../public/logo.svg"
+import LogoImage from "../../public/logo2.png"
 
 import styles from "./Nav.module.css"
 
@@ -10,8 +11,8 @@ const Nav: FunctionComponent = () => {
     return(
         <div className="wide-container">
             <div className={styles.navDiv}>
-                {/* <h3>Logo</h3> */}
-                <LogoSVG className={styles.logo} />
+                {/* <h3 className={styles.brand}>Jordan Acker</h3> */}
+                <Image src={LogoImage} width={36} height={36} alt="logo" />
                 <ul className={styles.navElements}>
                     <Link href='/#projects'><li className={styles.navItem}>Projects</li></Link>
                     <Link href='/#skills'><li className={styles.navItem}>Skills</li></Link>

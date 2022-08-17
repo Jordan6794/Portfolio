@@ -15,7 +15,7 @@ const CTA: FunctionComponent = () => {
                     </div>
 
                     <div className={styles.buttonArea}>
-                        <Link href="/#contact"><button className="btn btn-big btn-contrast">Contact me</button></Link>
+                        <Link href="/#contact"><button className="btn btn-big">Contact me</button></Link>
                     </div>
                 </div>
             </div>

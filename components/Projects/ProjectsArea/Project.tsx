@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, useRef } from 'react'
 import Image, { StaticImageData } from 'next/image'
 
 import CodeSVG from '../../../public/code_small.svg'
@@ -17,7 +17,15 @@ const Project: FunctionComponent<{
 	codeUrl: string
 	websiteUrl: string
 }> = ({ title, subtitle, text, technologies, isReverseSide, image, codeUrl, websiteUrl }) => {
-    
+    const ref = useRef<HTMLAnchorElement>(null)
+
+	//Switching the focus out of the button to prevent a bug where the hover display remains after clicking
+	function handleVisitClick(){
+		if(ref.current){
+			ref.current.focus()
+		}
+	}
+
 	const infosAreaDisplay = (
 		<div className={`${styles.infosArea} ${isReverseSide ? styles.reverseInfosArea : ''}`}>
 			<h2 className={styles.title}>{title}</h2>
@@ -35,7 +43,7 @@ const Project: FunctionComponent<{
 				{!isReverseSide && <a href={codeUrl} target="_blank" rel="noreferrer" className="btn btn-project-cta btn-ghost">
 					<CodeSVG className={`icon-project-btn ${styles.iconMargin}`} /> Code
 				</a>}
-				<a className="btn btn-project-cta" href={websiteUrl} target="_blank" rel="noreferrer">
+				<a ref={ref} className="btn btn-project-cta" href={websiteUrl} target="_blank" rel="noreferrer">
 					<EyeSVG className={`${styles.iconWhite} ${styles.iconMargin}`} /> View live
 				</a>
 				{isReverseSide && <a href={codeUrl} target="_blank" rel="noreferrer" className="btn btn-project-cta btn-ghost">
@@ -50,7 +58,7 @@ const Project: FunctionComponent<{
 			{!isReverseSide && infosAreaDisplay}
             <div className={styles.centerContainer}>
                 <div className={styles.pictureDivContainer}>
-					<a href={websiteUrl} target="_blank" rel="noreferrer" className={`btn btn-project-hover ${styles.btnProjectHover}`}>
+					<a href={websiteUrl} onClick={handleVisitClick} target="_blank" rel="noreferrer" className={`btn btn-project-hover ${styles.btnProjectHover}`}>
 						<VisitSVG className={`${styles.iconWhite} ${styles.visitIcon} ${styles.iconMargin}`} />
 						Visit website
 					</a>

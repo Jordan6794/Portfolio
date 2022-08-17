@@ -1,15 +1,16 @@
 - Redesign a bit skills ? (padding bellow front end title bigger ? (even w top ?) less pading top?)
-- Find good colors
+- Background color feedback
 - Recheck margins for each section
-- Logo
-- Add a 2nd background area ?
+- Logo feedback
+- Add a 2nd background area ? Feedback
+- Improve about section typography ?
+- Make resume
 
 - Change scrollbar ?
 - Recheck green success contact msg after colors all chosen
 - Fixed Nav or not fixed nav ?
 - Put slightly more padding on wide container ?
 - Change screenshot du ticket details
-- Make resume
 
 - Make responsive for mobile/ipad
 - Get a carousel instead of 1pic for project details ?
