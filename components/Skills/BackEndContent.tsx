@@ -15,8 +15,8 @@ const BackEndContent: FunctionComponent = () => {
         <>
             <SkillItem name="Node" icon={<NodeSvg className={styles.devIcon} />} />
             <SkillItem name="Express" icon={<ExpressSvg className={styles.devIcon} />} />
-            <SkillItem name="Firebase" icon={<FirebaseSvg className={styles.devIcon} />} />
             <SkillItem name="MongoDB" icon={<MongoSvg className={styles.devIcon} />} />
+            <SkillItem name="Firebase" icon={<FirebaseSvg className={styles.devIcon} />} />
             <SkillItem name="Json Web Token" icon={<JwtSvg className={styles.devIcon} />} />
         </>
     )

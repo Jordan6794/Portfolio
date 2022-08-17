@@ -1,8 +1,8 @@
 <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg">
  <g>
   <title>Layer 1</title>
-  <text xml:space="preserve" text-anchor="start" font-family="'Trispace'" font-size="24" id="svg_11" y="29.63934" x="16.36066" stroke-width="0" stroke="#000" fill="#007ccc">J</text>
-  <text xml:space="preserve" text-anchor="start" font-family="'Trispace'" font-size="24" id="svg_12" y="24.06557" x="6.19673" stroke-width="0" stroke="#000" fill="#007ccc">A</text>
+  <text xml:space="preserve" text-anchor="start" font-family="'Trispace'" font-size="24" id="svg_11" y="29.63934" x="16.36066" stroke-width="1">J</text>
+  <text xml:space="preserve" text-anchor="start" font-family="'Trispace'" font-size="24" id="svg_12" y="24.06557" x="6.19673" stroke-width="1">A</text>
  </g>
 
 </svg>

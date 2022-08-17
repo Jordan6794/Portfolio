@@ -9,6 +9,8 @@ const Home: NextPage = () => {
         <title>Jordan Acker</title>
         <meta name="description" content="Jordan Acker React Developer" />
         <link rel="icon" href="/logo2.png" />
+
+
       </Head>
 
       <Index />

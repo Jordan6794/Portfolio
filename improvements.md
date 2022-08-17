@@ -1,25 +1,20 @@
-- Redesign a bit skills ? (padding bellow front end title bigger ? (even w top ?) less pading top?)
 - Background color feedback
-- Recheck margins for each section
 - Logo feedback
 - Add a 2nd background area ? Feedback
-- Improve about section typography ?
-- Make resume
 
+- Make resume
+- Put slightly more padding on wide container ?
+- Redesign a bit skills ? (padding bellow front end title bigger ? (even w top ?) less pading top?)
+- Recheck margins for each section
+- Change screenshot du ticket details
+- Upgrade design and screenshot for habits30 auth and dashboard
+- Get a carousel instead of 1pic for project details ?
+- Make responsive for mobile/ipad
+- Learn and add skills Saas & typescript
+- Better copywriting to DHV more habits30 description
+
+- upgrade background
 - Change scrollbar ?
 - Recheck green success contact msg after colors all chosen
-- Fixed Nav or not fixed nav ?
-- Put slightly more padding on wide container ?
-- Change screenshot du ticket details
-
-- Make responsive for mobile/ipad
-- Get a carousel instead of 1pic for project details ?
-- upgrade background
+- Clean code virer removed images styles etc
 - Put background color card behind project image ? simillar halo lab
-
-
-
-Later :
-- Put more advanced marketing strategies ? probably irrelevant for job ; makes sense for freelance though :
-UNIQUE Value proposition
-WHY work with me answer

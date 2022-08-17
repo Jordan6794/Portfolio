@@ -9,9 +9,9 @@ export const project1 = {
 }
 export const project1Text = 
 <p className={styles.text}>
-    Habits30 is a full stack web application, the app is made to help building and maintaining new habits<br /> 
-    Users can also see their successes and failures on a dashboard that displays all their data statistics <br /> 
-    The website comes with an attractive landing page to attract new users as well as a demo account to try all the features
+    Habits30 is a full stack web application, the app is designed to help building and maintaining new habits.<br /> 
+    Users can also see their successes and failures on a dashboard that displays all of their data&apos;s statistics.<br /> 
+    The website comes with an appealing landing page to attract new users, as well as a demo account to try all of the features.
 </p>
 export const project1Technologies = ["React", "Redux", "MongoDB", "Node", "Express", "Typescript", "Oauth", "JWT"]
 export const project1Image = ScreenHabitsLanding
@@ -25,8 +25,8 @@ export const project2 = {
 export const project2Text = 
 <p className={styles.text}>
     Team Ticket is a full stack web application, it is a bug tracker to manage tickets within a team.<br /> 
-    There is a variety of features including making, managing, and viewing tickets, an dashboard page with statistics about the tickets as well as an history page, and more. <br />  
-    I made the front-end with nextjs, using redux for state, and for the backend I&apos;m using firebase.<br /> 
+    There is a variety of features including making, managing, and viewing tickets, a dashboard page with statistics about the tickets as well as a history page, and more. <br />  
+    I made the front-end with Nextjs, using Redux for state management, and for the back-end I&apos;m using firebase.<br /> 
 </p>
 export const project2Technologies = ["Nextjs", "React", "Redux", "Firebase", "Typescript"]
 export const project2Image = ScreenTTDashboard

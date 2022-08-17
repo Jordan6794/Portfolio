@@ -17,13 +17,14 @@ const About: FunctionComponent = () => {
                 <div className={styles.aboutContainer}>
                     <div className={styles.textArea}>
                         <div>
-                            <h3 className={styles.textTitle}>I am <span className="emphasis">Jordan Acker</span>, a fullstack developer</h3>
-                            <p className={styles.aboutText}>I am a <span className="emphasis">full stack</span> web developer with a strong proficiency using <span className="emphasis">React.</span><br />
-                                I build elegant and performant web solutions from full stack applications to world-class business websites. <br />
-                                As far as the back-end, I am familliar with the <span className="emphasis">MERN</span> stack as well as <span className="emphasis">firebase</span><br />
-                                I also love creating simple yet artistic <span className="emphasis">UI designs.</span>
+                            <h3 className={styles.textTitle}>I am <span className="emphasis">Jordan Acker</span>, a full stack developer</h3>
+                            <p className={styles.aboutText}>I am a <span className="emphasis">full stack</span> web developer with a strong proficiency in <span className="emphasis">React.</span><br />
+                                I build qualitative <span className="emphasis">responsive</span> websites, clean user interfaces and rich interactive web applications. <br />
+                                In regards to the back-end, I am familiar with the <span className="emphasis">MERN</span> stack as well as <span className="emphasis">firebase.</span><br />
+                                I also love creating simple yet artistic <span className="emphasis">UI designs.</span> <br />
+                                I&apos;ve always had a <span className="emphasis">problem-solving</span> mind, and I would say a quite friendly personality!
                             </p>
-                            <button className="btn btn-big">My Resume</button>
+                            {/* <button className="btn btn-big">My Resume</button> */}
                         </div>
                     </div>
                     <div className={styles.pictureArea}>

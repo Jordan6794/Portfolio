@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { FunctionComponent } from "react";
 
 import LogoImage from "../../public/logo2.png"
+import LogoSVG from "../../public/logo2.svg"
 
 import styles from "./Nav.module.css"
 
@@ -12,7 +13,9 @@ const Nav: FunctionComponent = () => {
         <div className="wide-container">
             <div className={styles.navDiv}>
                 {/* <h3 className={styles.brand}>Jordan Acker</h3> */}
-                <Image src={LogoImage} width={36} height={36} alt="logo" />
+
+                <LogoSVG className={styles.logo} />
+                {/* <Image src={LogoImage} width={36} height={36} alt="logo" /> */}
                 <ul className={styles.navElements}>
                     <Link href='/#projects'><li className={styles.navItem}>Projects</li></Link>
                     <Link href='/#skills'><li className={styles.navItem}>Skills</li></Link>

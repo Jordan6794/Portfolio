@@ -13,9 +13,9 @@ const FrontEndContent: FunctionComponent = () => {
 
     return(
         <>
-            <SkillItem name="React" icon={<ReactSvg className={styles.devIcon} />} />
             <SkillItem name="Redux" icon={<ReduxSvg className={styles.devIcon} />} />
             <SkillItem name="Nextjs" icon={<NextSvg className={styles.devIcon} />} /> 
+            <SkillItem name="React" icon={<ReactSvg className={styles.devIcon} />} />
             {/* <SkillItem name="Next2cl" icon={<Next2Svg className={styles.devIcon}/>} /> */}
             <SkillItem name="Responsive Design" icon={<CssSvg className={styles.devIcon} />} />
             

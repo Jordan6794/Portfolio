@@ -11,7 +11,7 @@ const CTA: FunctionComponent = () => {
                 <div className={styles.ctaDiv}>
                     <div className={styles.textArea}>
                         <h3 className={styles.title}>Let&apos;s work together!</h3>
-                        <p>I&apos;m available for fulltime or freelance jobs. Hire me and get your projects done.</p>
+                        <p>I&apos;m available for full time or freelance jobs. Hire me and get your projects done.</p>
                     </div>
 
                     <div className={styles.buttonArea}>
