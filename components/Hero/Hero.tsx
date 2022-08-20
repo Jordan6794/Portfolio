@@ -27,7 +27,7 @@ const Hero: FunctionComponent = () => {
 
 					<div className={styles.socialsDiv}>
 						<a href="https://github.com/Jordan6794" className={styles.socialLink} target="_blank" rel="noreferrer"><GithubSvg className={styles.socialIcon} /></a>
-						<a href="https://www.linkedin.com/in/jordan-acker-b84336248/" className={styles.socialLink} target="_blank" rel="noreferrer"><LinkedinSvg className={styles.socialIcon} /></a>
+						<a href="https://www.linkedin.com/in/react-developer-jordan/" className={styles.socialLink} target="_blank" rel="noreferrer"><LinkedinSvg className={styles.socialIcon} /></a>
 					</div>
 				</div>
 				{/* <a className="btn btn-hero" href="#Contact">Contact me</a> */}

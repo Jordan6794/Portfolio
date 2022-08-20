@@ -34,13 +34,14 @@
 }
 
 .seeWorkDiv {
-    height: 35px;
+    height: 42px;
     position: relative;
     display: flex;
     align-items: flex-end;
 }
 
 .seeWorkText {
+    font-size: 1.2rem;
     margin-left: 18px;
     text-transform: uppercase;
     /* font-size: 0.8rem; */

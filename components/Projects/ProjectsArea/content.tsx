@@ -5,7 +5,7 @@ import styles from "./ProjectsArea.module.css"
 
 export const project1 = {
     title: "Habits30",
-    subtitle: "Web Application",
+    subtitle: "Web Application · With few users",
 }
 export const project1Text = 
 <p className={styles.text}>
@@ -25,8 +25,8 @@ export const project2 = {
 export const project2Text = 
 <p className={styles.text}>
     Team Ticket is a full stack web application, it is a bug tracker to manage tickets within a team.<br /> 
-    There is a variety of features including making, managing, and viewing tickets, a dashboard page with statistics about the tickets as well as a history page, and more. <br />  
-    I made the front-end with Nextjs, using Redux for state management, and for the back-end I&apos;m using firebase.<br /> 
+    There is a variety of features including creating, managing, and viewing tickets, a dashboard page with statistics about the tickets, as well as a history page, and more. <br />  
+    I made the front-end with Nextjs, using Redux for state management, and for the back-end I&apos;m using Firebase.<br /> 
 </p>
 export const project2Technologies = ["Nextjs", "React", "Redux", "Firebase", "Typescript"]
 export const project2Image = ScreenTTDashboard
