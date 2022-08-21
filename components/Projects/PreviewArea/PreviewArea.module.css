@@ -179,3 +179,56 @@ a/t*100%
     animation-iteration-count: infinite;
     animation-delay: 9.86s;
 }
+
+
+/* =================
+Media QUERIES === */
+
+/* TODOmake an Ipad in between too */
+@media (max-width: 1000px) {
+    .laptopDiv {
+        width: 361px;
+        height: 550px;
+        position: relative;
+    }
+
+    .laptop {
+        display: none;
+    }
+    
+    .laptopDivMargin {
+        margin: 0;
+        margin-top: 2.5em;
+    }
+    
+    .imgScreenshot {
+        display: none;
+    }
+    
+    .phoneMockup {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 550px;
+        width: 361px;
+        z-index: 10;
+    }
+    
+    .phoneStatusBarMockup {
+        position: absolute;
+        top: 29px;
+        left: 64px;
+        height: 20px;
+        width: 232px;
+        z-index: 9;
+    }
+    
+    .imgScreenshotPhone {
+        position: absolute;
+        width: 228px;
+        height: 478px;
+        top: 45px;
+        left: 66px;
+        z-index: 6;
+    }
+}

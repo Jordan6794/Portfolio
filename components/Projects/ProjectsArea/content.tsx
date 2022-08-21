@@ -13,7 +13,7 @@ export const project1Text =
     Users can also see their successes and failures on a dashboard that displays all of their data&apos;s statistics.<br /> 
     The website comes with an appealing landing page to attract new users, as well as a demo account to try all of the features.
 </p>
-export const project1Technologies = ["React", "Redux", "MongoDB", "Node", "Express", "Typescript", "Oauth", "JWT"]
+export const project1Technologies = ["React", "Redux", "MongoDB", "Node", "Express", "Typescript", "OAuth", "JWT", "REST API", "Axios"]
 export const project1Image = ScreenHabitsLanding
 export const project1WebsiteUrl = "https://www.habits30.net"
 export const project1CodeUrl = "https://github.com/Jordan6794/Habits30"
