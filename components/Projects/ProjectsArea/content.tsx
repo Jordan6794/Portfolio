@@ -1,5 +1,5 @@
-import ScreenHabitsLanding from '../../../public/screen_habits_landing.png'
-import ScreenTTDashboard from '../../../public/screen_TT_dashboard.png'
+import ScreenHabitsLanding from '../../../public/screenshots/screen_habits_landing.png'
+import ScreenTTDashboard from '../../../public/screenshots/screen_TT_dashboard.png'
 
 import styles from "./ProjectsArea.module.css"
 

@@ -2,7 +2,6 @@
 - Logo feedback
 - Add a 2nd background area ? Feedback
 - Add name next to logo ? probably okay since already name in big
-- Make resume
 - Put REST (or RESTfull) API in skills (and add to habits30)
 
 - Put slightly more padding on wide container ?

@@ -24,7 +24,7 @@ const About: FunctionComponent = () => {
                                 I also love creating simple yet artistic <span className="emphasis">UI designs.</span> <br />
                                 I&apos;ve always had a <span className="emphasis">problem-solving</span> mind, and I would say a quite friendly personality!
                             </p>
-                            {/* <button className="btn btn-big">My Resume</button> */}
+                            <a href="/files/Jordan_Acker_Resume.pdf" target="_blank" rel="noreferrer" className="btn btn-big">My Resume</a>
                         </div>
                     </div>
                     <div className={styles.pictureArea}>
