@@ -52,7 +52,6 @@ button:disabled {
 
 .wide-container {
   width: 100%;
-  padding: 0 2em;
   padding: 0 1.9em;
   margin: 0 auto;
 }
@@ -68,6 +67,10 @@ button:disabled {
 
 .background-color {
   background-color: var(--secondary-color);
+}
+
+.background-color-white {
+  background-color: #F7F7F7;
 }
 
 .section-title {
@@ -90,14 +93,12 @@ button:disabled {
   margin-bottom: 0;
 }
 
-.white-color {
-  /* color: white; */
-}
-
 .emphasis {
   color: var(--main-color)
 }
 
+/* ================
+====buttons===== */
 .btn {
   display: inline-block;
   border: none;
@@ -116,11 +117,6 @@ button:disabled {
 
 .btn-big {
   font-size: 1.2rem;
-}
-
-.btn-contrast {
-  /* background-color: var(--contrast-color);
-  background-color: black; */
 }
 
 .btn-form {
@@ -190,4 +186,35 @@ button:disabled {
 
 .btn-tech-item:last-child {
   margin-right: 0;
+}
+
+
+
+/* ==============
+Media QUERIES= */
+@media (max-width: 700px) {
+  .wide-container {
+    padding: 0 1em;
+  }
+
+  .container {
+      width: 88%;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
+
+  .btn-nav-contact {
+    font-size: 0.65rem;
+  }
+
+  .btn-tech-item {
+    font-size: 0.65rem;
+  }
+
+  .btn-big {
+    font-size: 1rem;
+  }
+
 }

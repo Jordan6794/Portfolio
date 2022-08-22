@@ -5,7 +5,7 @@ import styles from "./ProjectsArea.module.css"
 
 export const project1 = {
     title: "Habits30",
-    subtitle: "Web Application · With few users",
+    subtitle: "Web Application · With active users",
 }
 export const project1Text = 
 <p className={styles.text}>

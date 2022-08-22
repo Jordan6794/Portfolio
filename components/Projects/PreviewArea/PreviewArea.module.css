@@ -183,13 +183,76 @@ a/t*100%
 
 /* =================
 Media QUERIES === */
-
+@media (max-width: 1400px) {
+    .laptopDiv {
+        position: relative;
+        width: 1024px;
+        height: 650px;
+    }
+    
+    .laptop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1024px;
+        height: 650px;
+        z-index: 5;
+    }
+    
+    .laptopDivMargin {
+        position: relative;
+        margin-left: 133px;
+        margin-top: 88px;
+    }
+    
+    .imgScreenshot {
+        width: 758px;
+        height: 473px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .phoneMockup {
+        position: absolute;
+        top: 70px;
+        right: -40px;
+        height: 520px;
+        width: 342px;
+        z-index: 10;
+    }
+    
+    .phoneStatusBarMockup {
+        position: absolute;
+        top: 98px;
+        right: 22px;
+        height: 19px;
+        width: 220px;
+        z-index: 9;
+    }
+    
+    .imgScreenshotPhone {
+        width: 215px;
+        height: 450px;
+        position: absolute;
+        top: 116px;
+        left: 653px;
+        z-index: 6;
+    }
+}
 /* TODOmake an Ipad in between too */
+
+/* Phone=== */
 @media (max-width: 1000px) {
+    .inActionDiv {
+        margin-bottom: 6em;
+    }
+
     .laptopDiv {
         width: 361px;
         height: 550px;
         position: relative;
+        margin-bottom: 2.5em;
     }
 
     .laptop {

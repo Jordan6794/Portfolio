@@ -81,3 +81,57 @@
 .socialLink:last-child {
     margin-right: 0;
 }
+
+/* ==============
+Media QUERIES= */
+/* ===big screens */
+@media (min-width: 1799px) {
+    .title {
+        font-size: 6.3rem
+    }
+}
+
+@media (min-width: 2150px) {
+    .title {
+        font-size: 7.8rem
+    }
+}
+
+@media (min-width: 2500px) {
+    .title {
+        font-size: 9rem
+    }
+}
+
+/* ===small screens */
+@media (max-width: 1100px) {
+    .title {
+        font-size: 4.2rem
+    }
+}
+
+@media (max-width: 700px) {
+    .title {
+        font-size: 2rem
+    }
+
+    .seeWorkDiv {
+        height: 31px;
+
+    }
+    
+    .seeWorkText {
+        font-size: 0.9rem;
+        margin-left: 14px;
+    }
+
+    .socialIcon {
+        height: 16px;
+        width: 16px;
+
+    }
+    .socialLink {
+        margin-right: 10px;
+    }
+
+}

@@ -67,3 +67,15 @@
 .illustrationSvg {
     width: 350px;
 }
+
+/* ==============
+Media QUERIES= */
+@media (max-width: 700px) {
+    .imageContainer {
+        display: none;
+    }
+
+    .formContentContainer {
+        grid-template-columns: 100%;
+    }
+}

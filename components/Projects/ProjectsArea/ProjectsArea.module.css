@@ -121,3 +121,29 @@
 .pictureDivContainer:hover .btnProjectHover {
     opacity: 1;
 }
+
+
+/* ==============
+Media QUERIES= */
+@media (max-width: 1000px) {
+    .projectDiv {
+        grid-template-columns: 100%;
+    }
+
+    .infosArea {
+        grid-row: 1;
+        margin-bottom: 2.5em;
+        text-align: left;
+    }
+
+    .reverseInfosArea {
+        padding-right: 1.5em;
+        padding-left: 0;
+    }
+    .reverseButtonsDiv {
+        justify-content: flex-start;
+    }
+    .reverseTechnologiesDiv {
+        justify-content: flex-start;
+    }
+}

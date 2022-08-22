@@ -44,3 +44,12 @@
 .navItem:hover::after {
     width: 100%;
 }
+
+
+/* ==============
+Media QUERIES= */
+@media (max-width: 700px) {
+    .navItem {
+        display: none;
+    }
+}

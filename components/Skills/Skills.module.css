@@ -23,8 +23,6 @@
     padding: 1.5em 1em 2em;
     width: 33.33%;
     text-align: center;
-    border-right: 2px solid #E6ECF8;
-    border-right: 1px solid lightgray;
     border-right: 1px solid #E6ECF8;
 }
 .skillTypeDiv:last-child {
@@ -35,8 +33,6 @@
     font-weight: 600;
     margin-bottom: 1.5em;
     padding-bottom: 1.5em;
-    border-bottom: 2px solid #E6ECF8;
-    border-bottom: 1px solid lightgray;
     border-bottom: 1px solid #E6ECF8;
 }
 
@@ -62,4 +58,23 @@
     height: 46px;
     width: 46px;
     margin-right: 5px;
+}
+
+
+/* ==============
+Media QUERIES= */
+@media (max-width: 700px) {
+    .skillsDiv {
+        flex-direction: column;
+    }
+
+    .skillTypeDiv {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid lightgray;
+    }
+
+    .skillTypeDiv:last-child {
+        border-bottom: none;
+    }
 }
