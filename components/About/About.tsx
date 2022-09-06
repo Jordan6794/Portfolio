@@ -10,7 +10,7 @@ const About: FunctionComponent = () => {
 
     return(
         <section id="about" className={styles.section}>
-            <div className="container">
+            <div className="my-container">
                 <div className="container-text-align">
                     <h3 className="section-title">About me</h3>
                 </div>
@@ -24,7 +24,7 @@ const About: FunctionComponent = () => {
                                 I also love creating simple yet artistic <span className="emphasis">UI designs.</span> <br />
                                 I&apos;ve always had a <span className="emphasis">problem-solving</span> mind, and I would say a quite friendly personality!
                             </p>
-                            <a href="/files/Jordan_Acker_Resume.pdf" target="_blank" rel="noreferrer" className="btn btn-big">My Resume</a>
+                            <a className="my-btn btn-big btn-resume" href="/files/Jordan_Acker_Resume.pdf" target="_blank" rel="noreferrer">My Resume</a>
                         </div>
                     </div>
                     <div className={styles.pictureArea}>

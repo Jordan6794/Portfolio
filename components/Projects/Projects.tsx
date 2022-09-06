@@ -9,7 +9,7 @@ const Projects: FunctionComponent = () => {
 
     return(
         <section id="projects" className={styles.section}>
-            <div className="container">
+            <div className="my-container">
                 <div className="container-text-align">
                     <h2 className="section-title no-margin-bottom">Past works</h2>
                 </div>

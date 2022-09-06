@@ -15,7 +15,7 @@ const Skills: FunctionComponent = () => {
 
     return(
         <section id="skills" className={styles.section}>
-            <div className="container">
+            <div className="my-container">
                 <div className="container-text-align">
                     <h3 className="section-title">My Skills</h3>
                 </div>

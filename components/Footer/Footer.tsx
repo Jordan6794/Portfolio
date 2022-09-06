@@ -9,7 +9,7 @@ const Footer: FunctionComponent = () => {
 
     return(
         <section>
-            <div className="container">
+            <div className="my-container">
                 <footer className={styles.footer}>
                     <p>2022 Jordan Acker. All rights reserved.</p>
                     <div className={styles.socialsDiv}>

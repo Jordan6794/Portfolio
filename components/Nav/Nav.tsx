@@ -20,7 +20,7 @@ const Nav: FunctionComponent = () => {
                     <Link href='/#projects'><li className={styles.navItem}>Projects</li></Link>
                     <Link href='/#skills'><li className={styles.navItem}>Skills</li></Link>
                     <Link href='/#about'><li className={styles.navItem}>About</li></Link>
-                    <Link href='/#contact'><li className='btn btn-nav-contact'>Contact me</li></Link>
+                    <Link href='/#contact'><li className='my-btn btn-nav-contact'>Contact me</li></Link>
                 </ul>
             </div>
         </div>

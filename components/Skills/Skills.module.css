@@ -31,8 +31,9 @@
 
 .skillTypeTitle {
     font-weight: 600;
-    margin-bottom: 1.5em;
-    padding-bottom: 1.5em;
+    font-size: 1.45rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
     border-bottom: 1px solid #E6ECF8;
 }
 
@@ -77,4 +78,12 @@ Media QUERIES= */
     .skillTypeDiv:last-child {
         border-bottom: none;
     }
+
+    .skillItemDiv {
+        padding-left: 30%;
+    }
+
+    /* .skillName {
+        font-size: 1.15rem;
+    } */
 }

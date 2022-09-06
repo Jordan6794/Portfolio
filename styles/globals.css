@@ -46,6 +46,11 @@ h1,h2,h3,h4,h5,p {
   margin: 0;
 }
 
+h1,h2,h3,h4,h5 {
+  font-weight: 700;
+  line-height: 1.35;
+}
+
 button:disabled {
   cursor: initial;
 }
@@ -56,7 +61,7 @@ button:disabled {
   margin: 0 auto;
 }
 
-.container {
+.my-container {
   width: 80%;
   max-width: 1500px;
   margin: 0 auto;
@@ -74,6 +79,7 @@ button:disabled {
 }
 
 .section-title {
+  color: black;
   font-size: 2.5rem;
   text-align: center;
   display: inline-block;
@@ -99,7 +105,8 @@ button:disabled {
 
 /* ================
 ====buttons===== */
-.btn {
+.my-btn {
+  line-height: 1.25;
   display: inline-block;
   border: none;
   outline: none;
@@ -110,8 +117,8 @@ button:disabled {
   padding: 0.55em 1.25em;
   border-radius: 23px;
 }
-.btn:hover,
-.btn:focus {
+.my-btn:hover,
+.my-btn:focus {
   opacity: 0.9;
 }
 
@@ -135,12 +142,6 @@ button:disabled {
   color: white;
 }
 
-.btn-ghost {
-  background-color: transparent;
-  border: 2px solid var(--main-color);
-  color: var(--main-color);
-}
-
 .btn-project-cta {
   border-radius: 4px;
   margin-right: 1em;
@@ -149,8 +150,21 @@ button:disabled {
   align-items: center;
   justify-content: center;
 }
+.btn-project-cta:hover {
+  color: white;
+}
 .btn-project-cta:last-child {
   margin-right: 0;
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+}
+.btn-ghost:hover {
+  /* over-riding bootstrap */
+  color: var(--main-color)
 }
 
 .icon-project-btn {
@@ -174,7 +188,7 @@ button:disabled {
 }
 
 .btn-tech-item {
-  cursor: initial;
+  cursor: default;
   font-size: 0.8rem;
   margin-right: 1em;
   margin-bottom: 1em;
@@ -188,6 +202,9 @@ button:disabled {
   margin-right: 0;
 }
 
+.btn-resume:hover {
+  color: white;
+}
 
 
 /* ==============
@@ -197,11 +214,11 @@ Media QUERIES= */
     padding: 0 1em;
   }
 
-  .container {
+  .my-container {
       width: 88%;
   }
 
-  .btn {
+  .my-btn {
     font-size: 0.8rem;
   }
 

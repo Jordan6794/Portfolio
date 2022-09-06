@@ -30,7 +30,7 @@ const Hero: FunctionComponent = () => {
 						<a href="https://www.linkedin.com/in/react-developer-jordan/" className={styles.socialLink} target="_blank" rel="noreferrer"><LinkedinSvg className={styles.socialIcon} /></a>
 					</div>
 				</div>
-				{/* <a className="btn btn-hero" href="#Contact">Contact me</a> */}
+				{/* <a className="my-btn btn-hero" href="#Contact">Contact me</a> */}
 			</div>
 		</div>
 	)

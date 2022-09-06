@@ -58,7 +58,7 @@ const CTA: FunctionComponent = () => {
 
     return(
             <section id="contact" className={styles.section}>
-                <div className="container">
+                <div className="my-container">
                     <div className="container-text-align">
                         <h3 className="section-title">Contact me</h3>
                     </div>
@@ -80,7 +80,7 @@ const CTA: FunctionComponent = () => {
                                 <label className={styles.label} htmlFor="message">Message</label>
                                 <textarea required className={styles.textarea} name="message" id="message" value={formInputs.message} onChange={onChangeMessage}></textarea>
                                 
-                                <button disabled={isSending} className="btn btn-form">{isSending ? 'Sending...' : 'Send message'}</button>
+                                <button disabled={isSending} className="my-btn btn-form">{isSending ? 'Sending...' : 'Send message'}</button>
                                 
                                 {successMessage && <p className={`${styles.formConfirmation} ${styles.success}`}>{successMessage}</p>}
                                 {errorMessage && <p className={`${styles.formConfirmation} ${styles.error}`}>{errorMessage}</p>}

@@ -15,7 +15,7 @@ const Index: FunctionComponent = () => {
 		<>
             <Nav />
 			<Hero />
-			{/* <BackgroundColor /> */}
+			<BackgroundColor />
             <Projects />
 			<CTA />
 			<Skills />
