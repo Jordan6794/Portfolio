@@ -30,6 +30,6 @@ export const project2Text =
     I made the front-end with Nextjs, using Redux for state management, and for the back-end I&apos;m using Firebase.<br /> 
 </p>
 export const project2Technologies = ["Nextjs", "React", "Redux", "Firebase", "Typescript"]
-export const project2Images = ['/screenshots/screen_tt_feed.png', '/screenshots/screen_tt_ticket.png', '/screenshots/screen_tt_dashboard.png', '/screenshots/screen_tt_history.png', '/screenshots/screen_tt_landing.png']
+export const project2Images = ['/screenshots/screen_TT_feed.png', '/screenshots/screen_TT_ticket.png', '/screenshots/screen_TT_dashboard.png', '/screenshots/screen_TT_history.png', '/screenshots/screen_TT_landing.png']
 export const project2WebsiteUrl = "https://teamticket.vercel.app"
 export const project2CodeUrl = "https://github.com/Jordan6794/Ticket-tracker"
