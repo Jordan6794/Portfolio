@@ -5,8 +5,13 @@ import Image from 'next/image'
 import MeImage from "../../public/me_crop.jpg"
 
 import styles from "./About.module.css"
+import { callHTTPCustomeEvent } from "../../utils/googleAPI.service";
 
 const About: FunctionComponent = () => {
+    
+    function sendClickEvent(eventName: string){
+		callHTTPCustomeEvent(eventName)
+	}
 
     return(
         <section id="about" className={styles.section}>
@@ -24,7 +29,7 @@ const About: FunctionComponent = () => {
                                 I also love creating simple yet artistic <span className="emphasis">UI designs.</span> <br />
                                 I&apos;ve always had a <span className="emphasis">problem-solving</span> mind, and I would say a quite friendly personality!
                             </p>
-                            <a className="my-btn btn-big btn-resume" href="/files/Jordan_Acker_Resume.pdf" target="_blank" rel="noreferrer">My Resume</a>
+                            <a className="my-btn btn-big btn-resume" href="/files/Jordan_Acker_Resume.pdf" onClick={() => sendClickEvent('click_resume')} target="_blank" rel="noreferrer">My Resume</a>
                         </div>
                     </div>
                     <div className={styles.pictureArea}>
