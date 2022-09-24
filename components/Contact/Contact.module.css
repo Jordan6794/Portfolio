@@ -3,6 +3,10 @@
     margin-bottom: 10em;
 }
 
+.reachmeParagraph {
+    font-size: 1.3rem;
+    margin-top: 2.5em;
+}
 
 .formContentContainer {
     display: grid;
