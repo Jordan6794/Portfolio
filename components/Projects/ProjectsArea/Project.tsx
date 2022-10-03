@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent, useState } from 'react'
 
 import CodeSVG from '../../../public/code_small.svg'
 import EyeSVG from '../../../public/eye_small.svg'
@@ -17,9 +17,20 @@ const Project: FunctionComponent<{
 	codeUrl: string
 	websiteUrl: string
 }> = ({ number, title, subtitle, text, technologies, isReverseSide, images, codeUrl, websiteUrl }) => {
+	
+	const [hasClickedCarousel, setHasClickedCarousel] = useState(false)
 
 	function sendClickEvent(eventName: string){
 		callHTTPCustomeEvent(eventName)
+	}
+
+	function handleCarouselClick(){
+		if(!hasClickedCarousel){
+			sendClickEvent(`click_carousel_project${number}`)
+
+			// prevent the event to be sent multiple times
+			setHasClickedCarousel(true)
+		}
 	}
 
 	const infosAreaDisplay = (
@@ -56,7 +67,7 @@ const Project: FunctionComponent<{
 
                 <div className={styles.carouselDivContainer}>
 					
-					<div id={`carouselProject${number}`} className="carousel carousel-dark slide" data-bs-ride="carousel">
+					<div onClick={handleCarouselClick} id={`carouselProject${number}`} className="carousel carousel-dark slide" data-bs-ride="carousel">
 						<div className="carousel-indicators">
 							{images.map((_, index) => <button key={index} type="button" data-bs-target={`#carouselProject${number}`} data-bs-slide-to={index} className={index === 0 ? "active" : ""} aria-current={index === 0 ? "true" : "false"} aria-label={`Slide ${index}`}></button>) }
 						</div>
