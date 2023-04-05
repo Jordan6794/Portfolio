@@ -12,4 +12,10 @@ const nextConfig = {
   }
 }
 
-module.exports = nextConfig
+module.exports = {
+  ...nextConfig,
+  i18n: {
+    locales: ['en-US', 'ja_JP'],
+    defaultLocale: 'en-US',
+  },
+}
