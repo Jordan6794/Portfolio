@@ -6,6 +6,7 @@ import LinkedinSvg from '../../public/linkedin.svg'
 import { callHTTPCustomeEvent } from '../../utils/googleAPI.service'
 
 import styles from './Hero.module.css'
+import { useTranslation } from 'next-i18next'
 
 const Hero: FunctionComponent = () => {
 
@@ -13,12 +14,14 @@ const Hero: FunctionComponent = () => {
 		callHTTPCustomeEvent(eventName)
 	}
 
+	const { t } = useTranslation("hero")
+
 	return (
 		<div className="wide-container">
 			<div className={styles.heroDiv}>
 				<div></div>
 				<h1 className={styles.title}>
-					Jordan Acker <br />
+					{t('my-name')} <br />
 					<span className="emphasis">Full Stack</span> developer
 					<br />
 					Specialized in <span className="emphasis">React</span>
@@ -27,7 +30,7 @@ const Hero: FunctionComponent = () => {
 					<div className={styles.seeWorkDiv}>
 						<span className={styles.line}></span>
 						<Link href="/#projects">
-							<p onClick={() => sendClickEvent('click_see_my_work')} className={styles.seeWorkText}>See my work</p>
+							<p onClick={() => sendClickEvent('click_see_my_work')} className={styles.seeWorkText}>{t('see-my-work')}</p>
 						</Link>
 					</div>
 
@@ -36,7 +39,6 @@ const Hero: FunctionComponent = () => {
 						<a href="https://www.linkedin.com/in/react-developer-jordan/" onClick={() => sendClickEvent('click_linkedin_hero')} className={styles.socialLink} target="_blank" rel="noreferrer"><LinkedinSvg className={styles.socialIcon} /></a>
 					</div>
 				</div>
-				{/* <a className="my-btn btn-hero" href="#Contact">Contact me</a> */}
 			</div>
 		</div>
 	)
