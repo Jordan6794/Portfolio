@@ -20,6 +20,11 @@
     /* color: var(--main-color); */
 }
 
+.rightArea {
+    display: flex;
+    align-items: center;
+}
+
 .navElements {
     display: flex;
     align-items: center;
