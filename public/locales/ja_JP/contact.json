@@ -1,0 +1,11 @@
+{
+    "title": "連絡",
+
+    "name": "名前",
+    "email": "メール",
+    "message": "メッセージ",
+    "send-message": "メッセージを送る",
+    "sending": "送信中。。。",
+
+    "can-also-reach": "直接連絡することも出来ます : "
+}

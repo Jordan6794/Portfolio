@@ -22,7 +22,7 @@ const Hero: FunctionComponent = () => {
 				<div></div>
 				<h1 className={styles.title}>
 					{t('my-name')} <br />
-					<span className="emphasis">Full Stack</span> developer
+					<span className="emphasis">{t("full-stack")}</span> {t('developer')}
 					<br />
 					Specialized in <span className="emphasis">React</span>
 				</h1>

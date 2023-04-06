@@ -10,23 +10,26 @@ import ToolsSVG from "../../public/tools3.svg"
 import MonitorSVG from "../../public/monitor2.svg"
 
 import styles from "./Skills.module.css"
+import { useTranslation } from "next-i18next";
 
 const Skills: FunctionComponent = () => {
+
+    const { t } = useTranslation("skills")
 
     return(
         <section id="skills" className={styles.section}>
             <div className="my-container">
                 <div className="container-text-align">
-                    <h3 className="section-title">My Skills</h3>
+                    <h3 className="section-title">{t('title')}</h3>
                 </div>
                     <div className={styles.skillsDiv}>
-                        <SkillsType title="Front End" icon={<MonitorSVG className={styles.skillTypeIcon}/>}>
+                        <SkillsType title={t('front-end')} icon={<MonitorSVG className={styles.skillTypeIcon}/>}>
                             <FrontEndContent />
                         </SkillsType>
-                        <SkillsType title="Back End" icon={<CodeSVG className={styles.skillTypeIcon}/>}>
+                        <SkillsType title={t('back-end')} icon={<CodeSVG className={styles.skillTypeIcon}/>}>
                             <BackEndContent />
                         </SkillsType>
-                        <SkillsType title="Other" icon={<ToolsSVG className={styles.skillTypeIcon}/>}>
+                        <SkillsType title={t('other')} icon={<ToolsSVG className={styles.skillTypeIcon}/>}>
                             <OtherContent />
                         </SkillsType>
                     </div>

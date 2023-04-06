@@ -1,0 +1,11 @@
+{
+    "title": "Contact me",
+
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send-message": "Send message",
+    "sending": "Sending...",
+
+    "can-also-reach": "You can also reach me directly at : "
+}

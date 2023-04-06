@@ -24,6 +24,11 @@ export async function getStaticProps({ locale }: { locale: any}) {
       ...(await serverSideTranslations(locale, [
         'common',
         'hero',
+        'past-works',
+        'cta',
+        'skills',
+        'about',
+        'contact',
       ])),
     },
   }

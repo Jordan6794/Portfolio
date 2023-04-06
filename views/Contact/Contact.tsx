@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser'
 import EnvelopeSVG from '../../public/envelope.svg'
 
 import styles from './Contact.module.css'
+import { useTranslation } from 'next-i18next'
 
 const CTA: FunctionComponent = () => {
 	const [formInputs, setFormInputs] = useState({
@@ -16,6 +17,8 @@ const CTA: FunctionComponent = () => {
 	const [errorMessage, setErrorMessage] = useState('')
 
 	const formRef = useRef(null)
+
+	const { t } = useTranslation('contact')
 
 	function onChangeName(event: React.ChangeEvent<HTMLInputElement>) {
 		setFormInputs((prevInputs) => ({ ...prevInputs, name: event.target.value }))
@@ -69,7 +72,7 @@ const CTA: FunctionComponent = () => {
 		<section id="contact" className={styles.section}>
 			<div className="my-container">
 				<div className="container-text-align">
-					<h3 className="section-title">Contact me</h3>
+					<h3 className="section-title">{t('title')}</h3>
 				</div>
 				<div className={styles.formContentContainer}>
                     <div>
@@ -77,7 +80,7 @@ const CTA: FunctionComponent = () => {
                             <div className={styles.maiLAndEmailDiv}>
                                 <div className={styles.flexColumn}>
                                     <label className={styles.label} htmlFor="user_name">
-                                        Name
+                                        {t('name')}
                                     </label>
                                     <input
                                         required
@@ -92,7 +95,7 @@ const CTA: FunctionComponent = () => {
 
                                 <div className={styles.flexColumn}>
                                     <label className={styles.label} htmlFor="user_email">
-                                        Email
+                                        {t('email')}
                                     </label>
                                     <input
                                         required
@@ -107,7 +110,7 @@ const CTA: FunctionComponent = () => {
                             </div>
 
                             <label className={styles.label} htmlFor="message">
-                                Message
+                                {t('message')}
                             </label>
                             <textarea
                                 required
@@ -119,13 +122,13 @@ const CTA: FunctionComponent = () => {
                             ></textarea>
 
                             <button disabled={isSending} className="my-btn btn-form">
-                                {isSending ? 'Sending...' : 'Send message'}
+                                {isSending ? t('sending') : t('send-message')}
                             </button>
 
                             {successMessage && <p className={`${styles.formConfirmation} ${styles.success}`}>{successMessage}</p>}
                             {errorMessage && <p className={`${styles.formConfirmation} ${styles.error}`}>{errorMessage}</p>}
                         </form>
-                        <p className={styles.reachmeParagraph}>You can also reach me directly at : jordan.acker.dev@gmail.com</p>
+                        <p className={styles.reachmeParagraph}>{t('can-also-reach')}jordan.acker.dev@gmail.com</p>
                     </div>
 					<div className={styles.imageContainer}>
 						<EnvelopeSVG className={styles.illustrationSvg} />
