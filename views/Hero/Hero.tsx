@@ -7,6 +7,7 @@ import { callHTTPCustomeEvent } from '../../utils/googleAPI.service'
 
 import styles from './Hero.module.css'
 import { useTranslation } from 'next-i18next'
+import { useRouter } from 'next/router'
 
 const Hero: FunctionComponent = () => {
 
@@ -16,6 +17,10 @@ const Hero: FunctionComponent = () => {
 
 	const { t } = useTranslation("hero")
 
+	const router = useRouter()
+	const { locale } = router
+	const isLocaleJapanese = locale === "ja_JP"
+
 	return (
 		<div className="wide-container">
 			<div className={styles.heroDiv}>
@@ -24,7 +29,7 @@ const Hero: FunctionComponent = () => {
 					{t('my-name')} <br />
 					<span className="emphasis">{t("full-stack")}</span> {t('developer')}
 					<br />
-					Specialized in <span className="emphasis">React</span>
+					{!isLocaleJapanese && t('specialized-in')}<span className="emphasis">React</span>{isLocaleJapanese && t('specialized-in')}
 				</h1>
 				<div className={styles.bottomDiv}>
 					<div className={styles.seeWorkDiv}>
