@@ -19,6 +19,7 @@ const CTA: FunctionComponent = () => {
 	const formRef = useRef(null)
 
 	const { t } = useTranslation('contact')
+	const { t: tCommon } = useTranslation('common')
 
 	function onChangeName(event: React.ChangeEvent<HTMLInputElement>) {
 		setFormInputs((prevInputs) => ({ ...prevInputs, name: event.target.value }))
@@ -46,7 +47,8 @@ const CTA: FunctionComponent = () => {
 			!process.env.NEXT_PUBLIC_EMAIL_APIKEY ||
 			!formRef.current
 		) {
-			setErrorMessage('Something went wrong. Please try again.')
+			const errorText = tCommon('something-went-wrong')
+			setErrorMessage(errorText)
 			return
 		}
 		try {
@@ -56,14 +58,16 @@ const CTA: FunctionComponent = () => {
 				formRef.current,
 				process.env.NEXT_PUBLIC_EMAIL_APIKEY
 			)
-			setSuccessMessage('Thank you. Your message has been sent successfully!')
+			const successText = t('message-success')
+			setSuccessMessage(successText)
 			setFormInputs({
 				name: '',
 				email: '',
 				message: '',
 			})
 		} catch (error: any) {
-			setErrorMessage('Something went wrong. Please try again.')
+			const errorText = tCommon('something-went-wrong')
+			setErrorMessage(errorText)
 			console.log(error.text)
 		}
 	}

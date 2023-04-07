@@ -1,11 +1,13 @@
 {
-    "title": "連絡",
+    "title": "お問い合わせ",
 
     "name": "名前",
     "email": "メール",
     "message": "メッセージ",
     "send-message": "メッセージを送る",
-    "sending": "送信中。。。",
+    "sending": "送信中。。",
+
+    "message-success": "Thank you. Your message has been sent successfully!",
 
     "can-also-reach": "直接連絡することも出来ます : "
 }
