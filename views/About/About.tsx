@@ -6,6 +6,7 @@ import MeImage from "../../public/me_crop.jpg"
 
 import styles from "./About.module.css"
 import { callHTTPCustomeEvent } from "../../utils/googleAPI.service";
+import { useTranslation } from "next-i18next";
 
 const About: FunctionComponent = () => {
     
@@ -13,11 +14,13 @@ const About: FunctionComponent = () => {
 		callHTTPCustomeEvent(eventName)
 	}
 
+    const { t } = useTranslation('about')
+
     return(
         <section id="about" className={styles.section}>
             <div className="my-container">
                 <div className="container-text-align">
-                    <h3 className="section-title">About me</h3>
+                    <h3 className="section-title">{t('title')}</h3>
                 </div>
                 <div className={styles.aboutContainer}>
                     <div className={styles.textArea}>
