@@ -10,11 +10,12 @@ export const project1 = {
 export const project1Text = 
 <p className={styles.text}>
     Habits30 is a full stack web application, the app is designed to help building and maintaining new habits.<br /> 
-    Users can also see their successes and failures on a dashboard that displays all of their data&apos;s statistics.<br /> 
+    The app is written with clean and testable code, with Unit Testing implemented with Jest. <br />
+    An onboarding process is there in order to help new users to get familiar with the features. And Sign In with Google is available as well. <br />
     The website comes with an appealing landing page to attract new users, as well as a demo account to try all of the features. <br />
-    An onboarding process is there in order to help new users to get familiar with the app. And Sign In with Google is available as well.
+    Users can also see their successes and failures on a dashboard that displays all of their data&apos;s statistics.
 </p>
-export const project1Technologies = ["React", "Redux", "MongoDB", "Node", "Express", "Typescript", "OAuth", "JWT", "REST API", "Axios"]
+export const project1Technologies = ["React", "Redux", "MongoDB", "Node", "Express", "Jest", "Typescript", "OAuth", "JWT", "REST API", "Axios"]
 export const project1Images = ['/screenshots/screen_habits_landing.png', '/screenshots/screen_habits_landing_2.png', '/screenshots/screen_habits_login.png','/screenshots/screen_habits_onboarding.png', '/screenshots/screen_habits_onboarding_1.png', '/screenshots/screen_habits_habits.png', '/screenshots/screen_habits_dashboard.png' , '/screenshots/screen_habits_how.png']
 export const project1WebsiteUrl = "https://www.habits30.net"
 export const project1CodeUrl = "https://github.com/Jordan6794/Habits30"
