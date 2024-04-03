@@ -9,8 +9,8 @@ export const project1 = {
 }
 export const project1Text = 
 <p className={styles.text}>
-    Habits30 is a full stack web application, the app is designed to help building and maintaining new habits.<br /> 
-    The app is written with clean and testable code, with Unit Testing implemented with Jest. <br />
+    Habits30 is a full stack web application, designed to help building and maintaining new habits.<br /> 
+    It is written with clean and testable code, with Unit Testing implemented with Jest. <br />
     An onboarding process is there in order to help new users to get familiar with the features. And Sign In with Google is available as well. <br />
     The website comes with an appealing landing page to attract new users, as well as a demo account to try all of the features. <br />
     Users can also see their successes and failures on a dashboard that displays all of their data&apos;s statistics.
