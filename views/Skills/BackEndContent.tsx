@@ -5,6 +5,7 @@ import ExpressSvg from "../../public/SVG/express.svg"
 import MongoSvg from "../../public/SVG/mongo.svg"
 import FirebaseSvg from "../../public/SVG/firebase.svg"
 import RestSvg from "../../public/SVG/rest-api-icon.svg"
+import SqlSvg from "../../public/SVG/sql.svg"
 
 import SkillItem from "./SkillItem";
 
@@ -19,6 +20,7 @@ const BackEndContent: FunctionComponent = () => {
             <SkillItem name="MongoDB" icon={<MongoSvg className={styles.devIcon} />} />
             <SkillItem name="Firebase" icon={<FirebaseSvg className={styles.devIcon} />} />
             <SkillItem name="REST API" icon={<RestSvg className={styles.devIcon} />} />
+            <SkillItem name="SQL" icon={<SqlSvg className={styles.devIcon} />} />
         </>
     )
 }
