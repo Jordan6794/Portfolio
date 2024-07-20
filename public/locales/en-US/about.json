@@ -1,5 +1,35 @@
 {
     "title": "About me",
 
-    "my-resume": "My Resume"
+    "subtitle p1": "I am ",
+    "subtitle emphasis": "Jordan Acker",
+    "subtitle p2": ", a full stack developer",
+
+    "line 1 p1": "I am a ",
+    "line 1 emphasis1": "full stack",
+    "line 1 p2": " web developer with a strong proficiency in ",
+    "line 1 emphasis2": "React.",
+    "line 1 p3": "",
+
+    "line 2 p1": "I build qualitative ",
+    "line 2 emphasis": "responsive",
+    "line 2 p2": " websites, clean user interfaces and rich interactive web applications.",
+
+    "line 3 p1": "In regards to the back-end, I am proficient with ",
+    "line 3 emphasis1": "AWS (certified)",
+    "line 3 p2": ", the ",
+    "line 3 emphasis2": "MERN",
+    "line 3 p3": " stack as well as ",
+    "line 3 emphasis3": "Firebase.",
+    "line 3 p4": "",
+
+    "line 4 p1": "I also love creating simple yet artistic ",
+    "line 4 emphasis": "UI designs.",
+    "line 4 p2": "",
+
+    "line 5 p1": "I've always had a ",
+    "line 5 emphasis": "problem-solving",
+    "line 5 p2": " mind, and I would say a quite friendly personality!",
+
+    "my resume": "My Resume"
 }

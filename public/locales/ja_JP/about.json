@@ -1,5 +1,35 @@
 {
     "title": "自己紹介",
 
-    "my-resume": "履歴書（英語版）"
+    "subtitle p1": "私は",
+    "subtitle emphasis": "ジョーダン・アッカー",
+    "subtitle p2": "、フルスタックエンジニアです",
+
+    "line 1 p1": "私は",
+    "line 1 emphasis1": "React",
+    "line 1 p2": "に強いスキルを持つ",
+    "line 1 emphasis2": "フルスタック",
+    "line 1 p3": "エンジニアです。",
+
+    "line 2 p1": "質の高い",
+    "line 2 emphasis": "レスポンシブ",
+    "line 2 p2": "ウェブサイト、クリーンなユーザーインターフェース、そしてリッチなインタラクティブウェブアプリケーションを構築します。",
+
+    "line 3 p1": "バックエンドに関しては、",
+    "line 3 emphasis1": "AWS（認定済み）",
+    "line 3 p2": "、",
+    "line 3 emphasis2": "MERN",
+    "line 3 p3": "スタック、そして",
+    "line 3 emphasis3": "Firebase.",
+    "line 3 p4": "に精通しています。",
+
+    "line 4 p1": "シンプルでありながら芸術的な",
+    "line 4 emphasis": "UIデザイン",
+    "line 4 p2": "を作ることも大好きです。",
+
+    "line 5 p1": "私は常に",
+    "line 5 emphasis": "問題解決",
+    "line 5 p2": "の考え方を持っており、フレンドリーな性格だと思います！",
+
+    "my resume": "履歴書（英語版）"
 }

@@ -1,0 +1,19 @@
+{
+    "technologies": "Technologies",
+    "code": "Code",
+    "view live": "View live",
+
+    "title 1": "Habits30",
+    "subtitle 1": "Web Application · With active users",
+    "project 1 line 1": "Habits30 is a full stack web application, designed to help building and maintaining new habits.",
+    "project 1 line 2": "It is written with clean and testable code, with Unit Testing implemented with Jest.",
+    "project 1 line 3": "An onboarding process is there in order to help new users to get familiar with the features. And Sign In with Google is available as well.",
+    "project 1 line 4": "The website comes with an appealing landing page to attract new users, as well as a demo account to try all of the features.",
+    "project 1 line 5": "Users can also see their successes and failures on a dashboard that displays all of their data's statistics.",
+
+    "title 2": "Team Ticket",
+    "subtitle 2": "Web Application · Portfolio project",
+    "project 2 line 1": "Team Ticket is a full stack web application, it is a bug tracker to manage tickets within a team.",
+    "project 2 line 2": "There is a variety of features including creating, managing, and viewing tickets, a dashboard page with statistics about the tickets, as well as a history page, and more.",
+    "project 2 line 3": "I made the front-end with Nextjs, using Redux for state management, and for the database I'm using Firebase."
+}

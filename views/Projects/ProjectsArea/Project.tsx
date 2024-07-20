@@ -5,6 +5,7 @@ import EyeSVG from '../../../public/eye_small.svg'
 import { callHTTPCustomeEvent } from '../../../utils/googleAPI.service'
 
 import styles from './ProjectsArea.module.css'
+import { useTranslation } from 'next-i18next'
 
 const Project: FunctionComponent<{
 	number: number
@@ -19,6 +20,8 @@ const Project: FunctionComponent<{
 }> = ({ number, title, subtitle, text, technologies, isReverseSide, images, codeUrl, websiteUrl }) => {
 	
 	const [hasClickedCarousel, setHasClickedCarousel] = useState(false)
+
+	const { t } = useTranslation('project')
 
 	function sendClickEvent(eventName: string){
 		callHTTPCustomeEvent(eventName)
@@ -38,7 +41,7 @@ const Project: FunctionComponent<{
 			<h2 className={styles.title}>{title}</h2>
 			<h5 className={styles.subtitle}>{subtitle}</h5>
 			{text}
-			<h5 className={styles.technologiesTitle}>Technologies</h5>
+			<h5 className={styles.technologiesTitle}>{t('technologies')}</h5>
 			<div className={`${styles.technologiesDiv} ${isReverseSide ? styles.reverseTechnologiesDiv : ''}`}>
 				{technologies.map((tech, i) => (
 					<div className="my-btn btn-tech-item" key={i}>
@@ -48,13 +51,13 @@ const Project: FunctionComponent<{
 			</div>
 			<div className={`${styles.buttonsDiv} ${isReverseSide ? styles.reverseButtonsDiv : ''}`}>
 				{!isReverseSide && <a href={codeUrl} onClick={() => sendClickEvent(`click_code_project${number}`)} target="_blank" rel="noreferrer" className="my-btn btn-project-cta btn-ghost">
-					<CodeSVG className={`icon-project-btn ${styles.iconMargin}`} /> Code
+					<CodeSVG className={`icon-project-btn ${styles.iconMargin}`} /> {t('code')}
 				</a>}
 				<a className="my-btn btn-project-cta" href={websiteUrl} onClick={() => sendClickEvent(`click_live_project${number}`)} target="_blank" rel="noreferrer">
-					<EyeSVG className={`${styles.iconWhite} ${styles.iconMargin}`} /> View live
+					<EyeSVG className={`${styles.iconWhite} ${styles.iconMargin}`} /> {t("view live")}
 				</a>
 				{isReverseSide && <a href={codeUrl} onClick={() => sendClickEvent(`click_code_project${number}`)} target="_blank" rel="noreferrer" className="my-btn btn-project-cta btn-ghost">
-					<CodeSVG className={`icon-project-btn ${styles.iconMargin}`} /> Code
+					<CodeSVG className={`icon-project-btn ${styles.iconMargin}`} /> {t("code")}
 				</a>}
 			</div>
 		</div>

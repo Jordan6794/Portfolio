@@ -25,14 +25,14 @@ const About: FunctionComponent = () => {
                 <div className={styles.aboutContainer}>
                     <div className={styles.textArea}>
                         <div>
-                            <h3 className={styles.textTitle}>I am <span className="emphasis">Jordan Acker</span>, a full stack developer</h3>
-                            <p className={styles.aboutText}>I am a <span className="emphasis">full stack</span> web developer with a strong proficiency in <span className="emphasis">React.</span><br />
-                                I build qualitative <span className="emphasis">responsive</span> websites, clean user interfaces and rich interactive web applications. <br />
-                                In regards to the back-end, I am proficient with <span className="emphasis">AWS (certified)</span>, the <span className="emphasis">MERN</span> stack as well as <span className="emphasis">firebase.</span><br />
-                                I also love creating simple yet artistic <span className="emphasis">UI designs.</span> <br />
-                                I&apos;ve always had a <span className="emphasis">problem-solving</span> mind, and I would say a quite friendly personality!
+                            <h3 className={styles.textTitle}>{t('subtitle p1')}<span className="emphasis">{t('subtitle emphasis')}</span>{t('subtitle p2')}</h3>
+                            <p className={styles.aboutText}>{t('line 1 p1')}<span className="emphasis">{t('line 1 emphasis1')}</span>{t('line 1 p2')}<span className="emphasis">{t('line 1 emphasis2')}</span>{t('line 1 p3')}<br />
+                                {t('line 2 p1')}<span className="emphasis">{t('line 2 emphasis')}</span>{t('line 2 p2')}<br />
+                                {t('line 3 p1')}<span className="emphasis">{t('line 3 emphasis1')}</span>{t('line 3 p2')}<span className="emphasis">{t('line 3 emphasis2')}</span>{t('line 3 p3')}<span className="emphasis">{t('line 3 emphasis3')}</span>{t('line 3 p4')}<br />
+                                {t('line 4 p1')}<span className="emphasis">{t('line 4 emphasis')}</span>{t('line 4 p2')}<br />
+                                {t('line 5 p1')}<span className="emphasis">{t('line 5 emphasis')}</span>{t('line 5 p2')}
                             </p>
-                            <a className="my-btn btn-big btn-resume" href="/files/Jordan_Acker_Resume.pdf" onClick={() => sendClickEvent('click_resume')} target="_blank" rel="noreferrer">My Resume</a>
+                            <a className="my-btn btn-big btn-resume" href="/files/Jordan_Acker_Resume.pdf" onClick={() => sendClickEvent('click_resume')} target="_blank" rel="noreferrer">{t('my resume')}</a>
                         </div>
                     </div>
                     <div className={styles.pictureArea}>
